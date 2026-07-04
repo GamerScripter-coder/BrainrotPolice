@@ -23,6 +23,8 @@ function env.getgitpath(where)
         return mainBuild .. "src/"
     elseif where == "games" then
         return mainBuild .. "src/games/"
+    elseif where == "gamesF" then
+        return mainBuild.."nil"
     end
 end
 
