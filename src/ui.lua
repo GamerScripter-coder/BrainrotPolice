@@ -134,7 +134,7 @@ Sections.Home.Container.versionLabel.Text = "Version: 0.33 BETA"
 
 
 local ok, gamePath = pcall(function()
-    return game:HttpGet(getgitpath("games") .. tostring(game.PlaceId) .. ".lua")
+    return game:HttpGet(getgitpath("gamesF") .. tostring(game.PlaceId) .. ".lua")
 end)
 local gameList = httpservice:JSONDecode(game:HttpGet(getgitpath("src").. "gameslist.json"))
 local creditsList = httpservice:JSONDecode(game:HttpGet(getgitpath("src").. "credits.json"))
